@@ -1,12 +1,10 @@
-import { css } from '@emotion/react';
-import { typeramps } from '../../style-utils/typeramps';
+import { css } from "@emotion/react";
+import { typeramps } from "../../style-utils/typeramps";
 import {
   desktop,
   tabletOnly,
   tabletMax,
-  tablet,
-  mobile,
-} from '../../style-utils/breakpoints';
+} from "../../style-utils/breakpoints";
 
 const styles = css`
   .scene {
@@ -20,7 +18,7 @@ const styles = css`
   #scene-1 {
     margin-top: -100vh;
     .copy-wrapper {
-      height: 300vh;
+      height: 1500vh;
     }
     ${tabletOnly} {
       .scene-1-3 {
@@ -29,26 +27,16 @@ const styles = css`
         padding-right: 185px;
       }
     }
-    .ces-logo {
-      ${mobile} {
-        width: 80px;
-      }
-      ${tablet} {
-        position: absolute;
-      }
-      ${tabletOnly} {
-        right: 64px;
-      }
-    }
+
   }
   #scene-3 {
     .copy-wrapper {
-      height: 300vh;
+      height: 350vh;
     }
   }
   #scene-4 {
     .copy-wrapper {
-      height: 500vh;
+      height: 300vh;
     }
   }
 
@@ -64,6 +52,7 @@ const styles = css`
     width: 100%;
     max-width: 1200px;
   }
+
 
   .copy-block {
     position: absolute;

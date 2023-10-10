@@ -11,7 +11,9 @@ function Scene({ num, className, children }) {
   return (
     <section className={cx("scene", className)} id={`scene-${num}`}>
       <div className="copy-wrapper">
-        <div className="copy-container">{children}</div>
+        <div className="copy-container">
+          {children}
+        </div>
       </div>
     </section>
   );
@@ -58,10 +60,10 @@ function Story() {
             just right for both of you
           </p>
         </div>
-      </Scene>
+   
 
       {/* Scene 2 - footwarming video */}
-      <Scene num={2}>
+
         <div className="copy-block scene-2-1 -center-t-m">
           <p className="display-sm">Preparing for sleep</p>
         </div>
@@ -70,10 +72,10 @@ function Story() {
             Gently warms your feet to help you fall asleep faster
           </p>
         </div>
-      </Scene>
+      
 
-            {/* Scene 3 - articulating bed video, couple video */}
-            <Scene num={3}>
+      {/* Scene 3 - articulating bed video, couple video */}
+    
         <div className="copy-block scene-3-1">
           <p className="headline-md">
             Individualize your sleeping temperature &mdash; so you're not too
@@ -91,12 +93,12 @@ function Story() {
             control
           </p>
         </div>
-      </Scene>
+     
 
       {/* Scene 4 - scroll controlled video */}
-      <Scene num={4}>
+
         <div className="copy-block scene-4-1 -right">
-          <p className="display-lg">Designed to help keep you asleep</p>
+          <p className="headline-md">Designed to help keep you asleep</p>
         </div>
         <div className="copy-block scene-4-2 -right">
           <p className="headline-md">
@@ -110,10 +112,9 @@ function Story() {
             effortlessly comfortable
           </p>
         </div>
-      </Scene>
-
+  
       {/* Scene 5 - partner snore video */}
-      <Scene num={5}>
+
         <div className="copy-block scene-5-1 -right">
           <p className="headline-md">
             Partner Snore<sup>&trade;</sup> technology<sup>*</sup> lets you
@@ -123,10 +124,10 @@ function Story() {
         <div className="copy-block scene-5-2 -right">
           <p className="display-lg">Sleep your best</p>
         </div>
-      </Scene>
+     
 
       {/* Scene 6 - phone and 28 minutes */}
-      <Scene num={6}>
+     
         <div className="copy-block scene-6-1">
           <p className="headline-md">
             See your sleep quality with personalized insights to help you

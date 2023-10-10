@@ -12,13 +12,13 @@ function ScrollBackgrounds({ playRefs }) {
       <div className="scene-bg bg-6-2">
         <div className="overlay" />
       </div>
-      <div className="scene-bg bg-6-1"></div>
+      <div className="scene-bg bg-6-1 bg-green"></div>
       <div className="scene-bg bg-5"></div>
-      <div className="scene-bg bg-4"></div>
-      <div className="scene-bg bg-3-3"></div>
-      <div className="scene-bg bg-3-2"></div>
-      <div className="scene-bg bg-3-1"></div>
-      <div className="scene-bg bg-2"></div>
+      <div className="scene-bg bg-4 bg-green"></div>
+      <div className="scene-bg bg-3-3 bg-orange"></div>
+      <div className="scene-bg bg-3-2 bg-orange"></div>
+      <div className="scene-bg bg-3-1 bg-orange"></div>
+      <div className="scene-bg bg-2 bg-green"></div>
       <div className="scene-bg bg-1-3"></div>
       <div className="scene-bg bg-1-2"></div>
       <div className="scene-bg bg-1-1"></div>

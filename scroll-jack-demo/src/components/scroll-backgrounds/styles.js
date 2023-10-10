@@ -8,27 +8,6 @@ const styles = css`
   inset: 0;
   z-index: -1;
 
-  .minutes {
-    position: absolute;
-    ${mobile} {
-      width: 30%;
-      bottom: 30%;
-    }
-    ${tabletOnly} {
-      width: 260px;
-      bottom: 20%;
-    }
-    ${tabletMax} {
-      left: 50%;
-      transform: translateX(-50%);
-    }
-    ${desktop} {
-      right: 235px;
-      bottom: 15%;
-    }
-    opacity: 0;
-  }
-
   .overlay {
     background-color: black;
     opacity: 0.35;
@@ -49,6 +28,12 @@ const styles = css`
     background-color: black;
     &.bg-transparent {
       background-color: transparent;
+    }
+    &.bg-green {
+      background-color: darkcyan;
+    }
+    &.bg-orange {
+      background-color: darkorange;
     }
 
     .sequence-canvas {
@@ -99,11 +84,7 @@ const styles = css`
         right: 0;
         transform: translateY(-50%);
       }
-      &.adjustability {
-        ${mobile} {
-          margin-top: 30%;
-        }
-      }
+
     }
   }
 `;
