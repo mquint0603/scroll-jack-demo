@@ -1,0 +1,9 @@
+export const phone = `@media (max-width: 576px)`; // 576
+export const mobile = `@media (max-width: 767)`; // 767
+export const fixedContent = `@media (min-width: 970px)`; // 970
+export const tablet = `@media (min-width: 768px)`; // 768
+export const tabletOnly = `@media (min-width: 768px) and (max-width: 1024px)`; // 768 - 1024
+export const tabletMax = `@media (max-width: 1024px)`; // max 1024
+export const desktop = `@media (min-width: 1025px)`; // 1025
+export const desktopLg = `@media (min-width: 1200px)`; // 1200
+export const maxDesktopLg = `@media (max-width: 1200px)`; // 1200
