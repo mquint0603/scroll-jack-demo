@@ -1,10 +1,6 @@
 import { css } from "@emotion/react";
 import { typeramps } from "../../style-utils/typeramps";
-import {
-  desktop,
-  tabletOnly,
-  tabletMax,
-} from "../../style-utils/breakpoints";
+import { desktop, tabletOnly, tabletMax } from "../../style-utils/breakpoints";
 
 const styles = css`
   .scene {
@@ -43,7 +39,6 @@ const styles = css`
     width: 100%;
     max-width: 1200px;
   }
-
 
   .copy-block {
     position: absolute;
@@ -126,7 +121,7 @@ const styles = css`
       text-transform: none;
     }
     .display-lg {
-      ${typeramps.display.sm};
+      ${typeramps.display.lg};
       text-transform: none;
     }
   }

@@ -25,6 +25,7 @@ function getFontSizeAndLineHeight(size, leading) {
 
 export const AVENIR_BOOK = `Arial, sans-serif`;
 export const AVENIR_BLACK = `Arial, sans-serif`;
+export const HICKORY_DICKORY = "VVDS Hickory Dickory Normal";
 
 export const fonts = {
   // Regular
@@ -37,6 +38,11 @@ export const fonts = {
   black: css`
     font-family: ${AVENIR_BLACK};
     font-weight: 600;
+  `,
+
+  fancy: css`
+    font-family: ${HICKORY_DICKORY};
+    font-weight: normal;
   `,
 };
 
@@ -99,8 +105,7 @@ export const typeramps = {
      */
     lg: css`
       ${getFontSizeAndLineHeight(40)};
-      ${fonts.black};
-      ${mods.upper};
+      ${fonts.fancy};
 
       sup {
         font-size: 24px;
@@ -132,8 +137,7 @@ export const typeramps = {
      */
     sm: css`
       ${getFontSizeAndLineHeight(36)};
-      ${fonts.black};
-      ${mods.upper};
+      ${fonts.fancy};
 
       sup {
         font-size: 22px;

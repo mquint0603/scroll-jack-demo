@@ -46,7 +46,7 @@ function createTimeline(trigger, id) {
 //   }
 // }
 const textEnter = { opacity: 1, y: -40, duration: 1 };
-const textExit = { opacity: 0, y: -80, duration: 1 };
+const textExit = { opacity: 0, y: -80, duration: 2 };
 
 function animate() {
   gsap.registerPlugin(ScrollTrigger);
@@ -59,24 +59,23 @@ function animate() {
   tl1
     .addLabel("Scene 1")
     .to(".scene-1-1", textExit, "+=2")
-    .to(".bg-1-1", { opacity: 0, duration: 1 }, "-=1")
-    .to(".scene-1-2", textEnter)
+    .to(".bg-1-1", { opacity: 0, duration: 2 }, "<+=1")
+    .to(".scene-1-2", textEnter, "<+=1")
     .to(".scene-1-2", textExit, "+=2")
     .to(".bg-1-2", { opacity: 0, duration: 1 }, "<")
     .to(".scene-1-3", textEnter)
     .to(".scene-1-3", textExit, "+=2")
-  
 
-  /** SCENE 2 Foot warming */
+    /** SCENE 2 Foot warming */
 
     // .addLabel("Scene 2")
-    .to(".bg-1-3", { opacity: 0, duration: 2 })
+    .to(".bg-1-3", { opacity: 0, duration: 2 }, "+=1")
     .to(".scene-2-1", textEnter, "<+=1")
     .to(".scene-2-1", textExit, "+=2")
     .to(".scene-2-2", textEnter)
     .to(".scene-2-2", textExit, "+=2")
 
-  /** SCENE 3 Microclimate, adjustability */
+    /** SCENE 3 Microclimate, adjustability */
 
     // .addLabel("Scene 3")
     .to(".bg-2", { opacity: 0, duration: 2 })
@@ -89,7 +88,7 @@ function animate() {
     .to(".scene-3-3", textEnter, "<+=1")
     .to(".scene-3-3", textExit, "+=2")
 
-  /** SCENE 4 Keeps you asleep */
+    /** SCENE 4 Keeps you asleep */
 
     // .addLabel("Scene 4")
     .to(".bg-3-3", { opacity: 0, duration: 1.5 })
@@ -100,7 +99,7 @@ function animate() {
     .to(".scene-4-3", textEnter)
     .to(".scene-4-3", textExit, "+=2")
 
-  /** SCENE 5 Parner snore */
+    /** SCENE 5 Parner snore */
 
     .addLabel("Scene 5")
     .to(".bg-4", { opacity: 0, duration: 2 })
@@ -109,7 +108,7 @@ function animate() {
     .to(".scene-5-2", textEnter)
     .to(".scene-5-2", textExit, "+=2")
 
-  /** SCENE 6 SleepIQ phones, 28 minutes */
+    /** SCENE 6 SleepIQ phones, 28 minutes */
 
     // .addLabel("Scene 6")
     .to(".bg-5", { opacity: 0, duration: 2 })
@@ -118,7 +117,7 @@ function animate() {
     .to(".bg-6-1", { opacity: 0, duration: 2 }, "<+=1")
     .to(".scene-6-2", textEnter, "<+=1");
 
-    return tl1;
+  return tl1;
 }
 
 export default animate;
