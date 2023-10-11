@@ -1,0 +1,9 @@
+Next steps:
+- Responsive images for breakpoints
+     - Maybe feed transformed vids/images into components instead of just the ID
+- Style background positions (full-width vs pinned right)
+- Style text blocks for each scene
+- Implement image sequence - decide which video to do that with
+- Hero panel, non-scroll-jacked, with some animations
+- Content 
+- Prop types 

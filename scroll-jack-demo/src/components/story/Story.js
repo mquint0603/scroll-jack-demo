@@ -11,9 +11,7 @@ function Scene({ num, className, children }) {
   return (
     <section className={cx("scene", className)} id={`scene-${num}`}>
       <div className="copy-wrapper">
-        <div className="copy-container">
-          {children}
-        </div>
+        <div className="copy-container">{children}</div>
       </div>
     </section>
   );
@@ -44,12 +42,9 @@ function Story() {
 
       {/* Scene 1 - still image, science-y loop, couple in bed video */}
       <Scene num={1}>
-        <div className="copy-block -start-opaque scene-1-1 -center-t-m">
-          <p className="display-lg mb-0">7 out of 10 couples</p>
-          <p className="headline-md">
-            say one of them sleeps <br className="d-none d-lg-block" />
-            too hot or too cold<sup>**</sup>
-          </p>
+        <div className="copy-block -start-opaque scene-1-1 -center">
+          <p className="display-lg text-center">Time for space stuff</p>
+          <p className="headline-md text-center">Scrolling through space</p>
         </div>
         <div className="copy-block scene-1-2 -center">
           <p className="display-sm text-center">
@@ -63,9 +58,8 @@ function Story() {
             just right for both of you
           </p>
         </div>
-   
 
-      {/* Scene 2 - footwarming video */}
+        {/* Scene 2 - footwarming video */}
 
         <div className="copy-block scene-2-1 -center-t-m">
           <p className="display-sm">Preparing for sleep</p>
@@ -75,10 +69,9 @@ function Story() {
             Gently warms your feet to help you fall asleep faster
           </p>
         </div>
-      
 
-      {/* Scene 3 - articulating bed video, couple video */}
-    
+        {/* Scene 3 - articulating bed video, couple video */}
+
         <div className="copy-block scene-3-1">
           <p className="headline-md">
             Individualize your sleeping temperature &mdash; so you're not too
@@ -96,9 +89,8 @@ function Story() {
             control
           </p>
         </div>
-     
 
-      {/* Scene 4 - scroll controlled video */}
+        {/* Scene 4 - scroll controlled video */}
 
         <div className="copy-block scene-4-1 -right">
           <p className="headline-md">Designed to help keep you asleep</p>
@@ -115,8 +107,8 @@ function Story() {
             effortlessly comfortable
           </p>
         </div>
-  
-      {/* Scene 5 - partner snore video */}
+
+        {/* Scene 5 - partner snore video */}
 
         <div className="copy-block scene-5-1 -right">
           <p className="headline-md">
@@ -127,10 +119,9 @@ function Story() {
         <div className="copy-block scene-5-2 -right">
           <p className="display-lg">Sleep your best</p>
         </div>
-     
 
-      {/* Scene 6 - phone and 28 minutes */}
-     
+        {/* Scene 6 - phone and 28 minutes */}
+
         <div className="copy-block scene-6-1">
           <p className="headline-md">
             See your sleep quality with personalized insights to help you

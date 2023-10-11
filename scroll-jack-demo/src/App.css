@@ -1,2 +1,23 @@
-.text-center {text-align: center;}
-* {font-family: 'Arial', sans-serif;}
+.text-center {
+  text-align: center;
+}
+* {
+  font-family: "Arial", sans-serif;
+}
+p {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+@font-face {
+  font-family: "VVDS Hickory Dickory Normal";
+  src: url("../assets/fonts/VVDSHickoryDickory-Normal.woff");
+  /* src: url("../fonts/avenir/avenir-45-book.eot?#iefix") format("eot"),
+    url("../fonts/avenir/avenir-45-book.woff2") format("woff2"),
+    url("../fonts/avenir/avenir-45-book.woff") format("woff"),
+    url("../fonts/avenir/avenir-45-book.ttf") format("truetype"),
+    url("../fonts/avenir/avenir-45-book.svg#f67fa3b5-c1d1-488f-8e60-a828b9ad56a4")
+      format("svg"); */
+  /* unicode-range: U+000-5FF; */
+  font-display: swap;
+}
