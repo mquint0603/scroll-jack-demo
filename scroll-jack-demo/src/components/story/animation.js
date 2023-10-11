@@ -25,7 +25,7 @@ function createTimeline(trigger, id) {
   return gsap.timeline({
     scrollTrigger: {
       trigger,
-      scrub: true,
+      scrub: 1,
       ease: "none",
       start: "top top",
       end: "bottom bottom",
@@ -117,6 +117,8 @@ function animate() {
     .to(".scene-6-1", textExit, "+=2")
     .to(".bg-6-1", { opacity: 0, duration: 2 }, "<+=1")
     .to(".scene-6-2", textEnter, "<+=1");
+
+    return tl1;
 }
 
 export default animate;

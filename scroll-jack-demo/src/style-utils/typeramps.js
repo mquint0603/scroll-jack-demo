@@ -23,8 +23,8 @@ function getFontSizeAndLineHeight(size, leading) {
   `;
 }
 
-export const AVENIR_BOOK = `Helvetica, Arial, sans-serif`;
-export const AVENIR_BLACK = `Helvetica, Arial, sans-serif`;
+export const AVENIR_BOOK = `Arial, sans-serif`;
+export const AVENIR_BLACK = `Arial, sans-serif`;
 
 export const fonts = {
   // Regular
@@ -36,7 +36,7 @@ export const fonts = {
   // Phat
   black: css`
     font-family: ${AVENIR_BLACK};
-    font-weight: normal;
+    font-weight: 600;
   `,
 };
 

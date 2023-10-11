@@ -9,7 +9,6 @@ import {
 const styles = css`
   .scene {
     position: relative;
-    margin-top: -80vh;
   }
   .copy-wrapper {
     position: relative;
@@ -20,14 +19,6 @@ const styles = css`
     .copy-wrapper {
       height: 1500vh;
     }
-    ${tabletOnly} {
-      .scene-1-3 {
-        // make room to align ces logo correctly
-        max-width: 100%;
-        padding-right: 185px;
-      }
-    }
-
   }
   #scene-3 {
     .copy-wrapper {

@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { useRef, useLayoutEffect } from "react";
 import cx from "classnames";
-
+import { gsap } from "gsap";
 import ScrollBackgrounds from "../scroll-backgrounds/ScrollBackgrounds";
 
 import animate from "./animation";
@@ -32,7 +32,10 @@ function Story() {
   }).current;
 
   useLayoutEffect(() => {
-    timeLine.current = animate(playRefs);
+    const ctx = gsap.context(() => {
+      timeLine.current = animate();
+    });
+    return () => ctx.revert();
   }, [playRefs]);
 
   return (
@@ -42,7 +45,7 @@ function Story() {
       {/* Scene 1 - still image, science-y loop, couple in bed video */}
       <Scene num={1}>
         <div className="copy-block -start-opaque scene-1-1 -center-t-m">
-          <p className="display-lg mb-0">8 out of 10 couples</p>
+          <p className="display-lg mb-0">7 out of 10 couples</p>
           <p className="headline-md">
             say one of them sleeps <br className="d-none d-lg-block" />
             too hot or too cold<sup>**</sup>
