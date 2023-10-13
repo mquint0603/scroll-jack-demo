@@ -104,7 +104,7 @@ export const typeramps = {
      * | Mobile     | 40px      | 1.5         |
      */
     lg: css`
-      ${getFontSizeAndLineHeight(40)};
+      ${getFontSizeAndLineHeight(48)};
       ${fonts.fancy};
 
       sup {
@@ -112,14 +112,14 @@ export const typeramps = {
       }
 
       ${tablet} {
-        ${getFontSizeAndLineHeight(48)};
+        ${getFontSizeAndLineHeight(60)};
 
         sup {
           font-size: 28px;
         }
       }
       ${desktop} {
-        ${getFontSizeAndLineHeight(60)};
+        ${getFontSizeAndLineHeight(72)};
 
         sup {
           font-size: 36px;
@@ -173,7 +173,6 @@ export const typeramps = {
     xl: css`
       ${getFontSizeAndLineHeight(28)};
       ${fonts.black};
-      ${mods.upper};
 
       sup {
         font-size: 18px;
@@ -206,7 +205,6 @@ export const typeramps = {
     lg: css`
       ${getFontSizeAndLineHeight(24)};
       ${fonts.black};
-      ${mods.upper};
 
       sup {
         font-size: 14px;
@@ -239,7 +237,6 @@ export const typeramps = {
     md: css`
       ${getFontSizeAndLineHeight(20)};
       ${fonts.black};
-      ${mods.upper};
 
       sup {
         font-size: 12px;
@@ -272,7 +269,6 @@ export const typeramps = {
     sm: css`
       ${getFontSizeAndLineHeight(20)};
       ${fonts.black};
-      ${mods.upper};
 
       sup {
         font-size: 12px;

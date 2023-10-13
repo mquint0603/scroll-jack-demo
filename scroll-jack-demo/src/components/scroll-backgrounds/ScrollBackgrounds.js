@@ -26,7 +26,7 @@ function ScrollBackgrounds({ playRefs }) {
         <ImageBackground imgId="scroll-jack-demo/eclipse" />
       </div>
       <div className="scene-bg bg-1-3">
-        <VideoBackground vidId="scroll-jack-demo/mars-turning" fadeInOut />
+        <VideoBackground vidId="scroll-jack-demo/mars-turning" />
       </div>
       <div className="scene-bg bg-1-2">
         <VideoBackground vidId="scroll-jack-demo/earth-turning" />

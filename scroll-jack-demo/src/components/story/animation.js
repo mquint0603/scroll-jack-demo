@@ -102,7 +102,7 @@ function animate() {
     /** SCENE 5 Parner snore */
 
     .addLabel("Scene 5")
-    .to(".bg-4", { opacity: 0, duration: 2 })
+    .to(".bg-4", { opacity: 0, duration: 2 }, "<=+1")
     .to(".scene-5-1", textEnter, "<+=1")
     .to(".scene-5-1", textExit, "+=2")
     .to(".scene-5-2", textEnter)
@@ -111,7 +111,7 @@ function animate() {
     /** SCENE 6 SleepIQ phones, 28 minutes */
 
     // .addLabel("Scene 6")
-    .to(".bg-5", { opacity: 0, duration: 2 })
+    .to(".bg-5", { opacity: 0, duration: 2 }, "<=+1")
     .to(".scene-6-1", textEnter, "<+=1")
     .to(".scene-6-1", textExit, "+=2")
     .to(".bg-6-1", { opacity: 0, duration: 2 }, "<+=1")

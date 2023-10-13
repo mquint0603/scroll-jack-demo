@@ -42,60 +42,24 @@ const styles = css`
 
   .copy-block {
     position: absolute;
-    top: 55%;
+    top: 50%;
     transform: translateY(-50%);
     opacity: 0;
     color: white;
     padding-left: 1rem;
     padding-right: 1rem;
-
-    ${tabletMax} {
-      bottom: 5%;
-      top: initial;
-      transform: translateY(0%);
-
-      &.-center-t-m {
-        left: 50%;
-        top: 55%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-        bottom: initial;
-      }
-
-      &.scene-1-1,
-      &.scene-2-1 {
-        text-align: center;
-      }
-      &.scene-3-2,
-      &.scene-3-3 {
-        bottom: 10%;
-      }
-    }
-
-    ${tabletOnly} {
-      max-width: 80%;
-      padding-left: 64px;
-      &.-center,
-      &.-center-t-m {
-        padding-left: 1rem;
-      }
-    }
+    max-width: 80%;
 
     ${desktop} {
       max-width: 600px;
-      &.-right {
-        right: 10%;
-      }
     }
 
     &.-start-opaque {
       opacity: 1;
-      top: 50%;
     }
 
     &.-center {
       left: 50%;
-      top: 55%;
       transform: translate(-50%, -50%);
       width: 90%;
       max-width: 1200px;
@@ -110,19 +74,15 @@ const styles = css`
     }
     .headline-lg {
       ${typeramps.headline.lg};
-      text-transform: none;
     }
     .headline-md {
       ${typeramps.headline.md};
-      text-transform: none;
     }
     .display-sm {
       ${typeramps.display.sm};
-      text-transform: none;
     }
     .display-lg {
       ${typeramps.display.lg};
-      text-transform: none;
     }
   }
   .pause-btn {

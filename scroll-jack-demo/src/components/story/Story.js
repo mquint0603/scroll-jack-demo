@@ -47,13 +47,13 @@ function Story() {
           <p className="headline-md text-center">Scrolling through space</p>
         </div>
         <div className="copy-block scene-1-2 -center">
-          <p className="display-sm text-center">
-            Science tells us regulating your sleep temperature may lead to
-            higher quality sleep
+          <p className="display-lg text-center">
+            The Climate360 smart bed actively cools or warms each side, so it’s
+            just right for both of you
           </p>
         </div>
-        <div className="copy-block scene-1-3">
-          <p className="headline-md">
+        <div className="copy-block scene-1-3 -center">
+          <p className="display-lg text-center">
             The Climate360™ smart bed actively cools or warms each side, so it’s
             just right for both of you
           </p>
